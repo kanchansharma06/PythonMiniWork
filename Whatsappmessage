@@ -1,2 +1,5 @@
 import pywhatkit
 pywhatkit.sendwhatmsg('+91999999999','this is my message',20,20)    #time 20 hour 20 minute=8:20PM at which message will send
+pywhatkit.showHistory()  #show all current history of message you have send
+pywhatkit.search("Python")   #search python on google
+pywhatkit.playonyt("Python")    #play the first video that it find on youtube
