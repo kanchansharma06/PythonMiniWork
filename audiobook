@@ -1,0 +1,13 @@
+import pyttsx3    #for sound
+import PyPDF2     #to read pdffile
+from tkinter.filedialog import *
+book=askopenfilename()    #open dialog box to select a pdf file
+pdfreader=PyPDF2.PdfFileReader(book)    #read the selected book
+pages=pdfreader.numPages    #find number of pages
+for i in range(11,pages):    
+    page=pdfreader.getPage(i)     #getting particular page 
+    text=page.extractText()     #extracting text
+    print(text)
+    player=pyttsx3.init()
+    player.say(text)        #speaking text
+    player.runAndWait()
