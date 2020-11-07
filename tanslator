@@ -1,0 +1,9 @@
+from translate import Translator
+translator=Translator(from_lang='Spanish',to_lang='English')    #converting spanish language to english
+res=translator.translate('cómo estás')
+print(res)
+
+
+translator=Translator(from_lang='Chinese',to_lang='English')  @converting chinese to english
+res=translator.translate('你好')
+print(res)
